@@ -1,0 +1,25 @@
+.bg_image{
+    height: 90vh;
+    object-fit: contain;
+    transition: all 200ms ease-in;
+    opacity: 1;
+    cursor: grab;
+}
+/* 
+.bg_image:hover{
+    opacity: 1;
+} */
+
+
+.HomeWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    /* margin: 1rem; */
+}
+
+.landing_text{
+    text-align: center;
+    font-size: 7rem;
+}

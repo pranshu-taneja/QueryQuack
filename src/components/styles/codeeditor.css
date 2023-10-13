@@ -1,0 +1,23 @@
+.runbtn {
+    background-color: lightgreen;
+}
+
+.toolbox {
+    /* width: auto; */
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    color: rgba(255, 255, 255, 0.87);
+    padding: 0.5rem;
+    background-color: lightgreen;
+    font-family: poppins;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.wrapperEditor {
+    margin: 1rem
+}
