@@ -1,9 +1,13 @@
 .bg_image{
+
     height: 90vh;
+    width: 50vw;
     object-fit: contain;
     transition: all 200ms ease-in;
-    opacity: 1;
+    /* opacity: 0.7; */
     cursor: grab;
+    max-width: 50vw;
+    max-height: 100vh;
 }
 /* 
 .bg_image:hover{
