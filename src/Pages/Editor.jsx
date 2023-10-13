@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import MaterialRender from "../components/MaterialRender";
 import { v4 as uuidv4 } from "uuid";
-import "./styles/editor.css";
+import "./styles/Editor.css";
 import CodeEditor from "../components/CodeEditor";
 
 function Editor() {
