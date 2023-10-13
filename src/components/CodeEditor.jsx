@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { sql } from "@codemirror/lang-sql";
-import "./styles/CodeEditor.css";
+import "./styles/Codeeditor.css";
 import sqlQueries from "../helpers/sqlQueries";
 
 export default function CodeEditor({ handleExec }) {
