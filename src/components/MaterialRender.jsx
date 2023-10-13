@@ -2,7 +2,6 @@ import React, { useMemo, useEffect, useState } from "react";
 import { MaterialReactTable } from "material-react-table";
 import csvtojson from "csvtojson";
 import useTableTheme from "./styles/useTableTheme";
-import "./styles/Materialrender.css";
 import { ThemeProvider } from "@mui/material";
 
 export default function MaterialRender({ tableURL }) {
