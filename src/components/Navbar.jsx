@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/navbar.css";
+import "./styles/Navbar.css";
 import { logo_URL, user_icon_URL } from "../helpers/Constants";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";

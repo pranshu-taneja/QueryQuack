@@ -1,6 +1,6 @@
 import React from "react";
 import { bg_Image } from "../helpers/Constants";
-import "./styles/home.css";
+import "./styles/Home.css";
 function Home() {
   return (
     <div className="HomeWrapper">

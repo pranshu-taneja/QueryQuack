@@ -44,13 +44,20 @@ const useTableTheme = () => {
           MuiLinearProgress: {
             styleOverrides: {
               root: {
-                height: 3, 
+                height: 3,
                 borderRadius: 5,
-                backgroundColor: "#b6fab6", 
+                backgroundColor: "#b6fab6",
               },
               bar: {
                 borderRadius: 5,
-                backgroundColor: "#90ee90", 
+                backgroundColor: "#90ee90",
+              },
+            },
+          },
+          MuiPaper: {
+            styleOverrides: {
+              root: {
+                width: "50vw",
               },
             },
           },
