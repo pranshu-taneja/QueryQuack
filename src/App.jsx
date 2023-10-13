@@ -2,18 +2,18 @@ import React from "react";
 import Home from "./Pages/Home.jsx";
 import Editor from "./Pages/Editor.jsx";
 import Navbar from "./components/Navbar.jsx";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar></Navbar>
+    <Router>
+      <Navbar />
       <Routes>
-        <Route path="/" exact element={<Home />}></Route>
-        <Route path="/Home" exact element={<Home />}></Route>
-        <Route path="/Editor" exact element={<Editor />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Editor" element={<Editor />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
