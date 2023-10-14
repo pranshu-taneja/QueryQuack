@@ -46,4 +46,4 @@
 
 
 # Extra's
-- Website is already optimized to load large amount of data in the table viewer
+- The website has been optimized to efficiently load and display a large amount of data in a table viewer by the help of virtualization techniques.
