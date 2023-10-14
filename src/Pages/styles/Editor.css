@@ -1,34 +1,26 @@
 .singleTableContainer {
-    border: 0.2rem solid lightgreen;
-    padding: 1rem;
-    margin: 1rem;
-  
-  }
-  
-  .mainWrapper {
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
-  .wrapperTableEditor {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .vl {
-    border-left: 6px solid lightgreen;
-    height: auto;
-  }
-  
-  
-  .codeEditorContainer {
-    max-width: 50vw;
-  
-  }
-  
-  .multiTableContainer {
-    min-width: 50vw;
-    max-height: 90vh;
-    overflow: scroll;
-  }
+  border: 0.2rem solid lightgreen;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.vl {
+  height: auto;
+  width: 0.3rem;
+  background-color: lightgreen;
+}
+
+
+.multiTableContainer {
+  min-width: 50vw;
+  max-height: 90vh;
+  overflow: scroll;
+}

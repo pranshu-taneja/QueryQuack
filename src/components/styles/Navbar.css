@@ -34,13 +34,19 @@
     border: #646cff;
 }
 
+.primary-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .userIcon {
     width: 30px;
     height: 30px;
 }
 
-.logoIcon-container {
+.logoIcon-Container {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -65,4 +71,12 @@
 .logoIcon {
     width: 50px;
     height: 50px;
+}
+
+.Hamburger{
+    font-weight: bold;
+}
+
+.Hamburger{
+    cursor: pointer;
 }

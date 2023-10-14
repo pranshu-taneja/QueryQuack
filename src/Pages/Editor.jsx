@@ -18,20 +18,18 @@ function Editor() {
 
   return (
     <div className="mainWrapper">
-      <div className="wrapperTableEditor">
-        <div className="codeEditorContainer">
-          <CodeEditor handleExec={handleExec}></CodeEditor>
-        </div>
-        <div className="vl"></div>
-        <div className="multiTableContainer">
-          {curCsvURL.map((urlVal) => {
-            return (
-              <div key={uuidv4()} className="singleTableContainer">
-                <MaterialRender tableURL={urlVal}></MaterialRender>
-              </div>
-            );
-          })}
-        </div>
+      <div className="codeEditorContainer">
+        <CodeEditor handleExec={handleExec}></CodeEditor>
+      </div>
+      <div className="vl"></div>
+      <div className="multiTableContainer">
+        {curCsvURL.map((urlVal) => {
+          return (
+            <div key={uuidv4()} className="singleTableContainer">
+              <MaterialRender tableURL={urlVal}></MaterialRender>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

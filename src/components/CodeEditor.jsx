@@ -34,9 +34,6 @@ export default function CodeEditor({ handleExec }) {
           value={selectedOption}
           onChange={handleDropdownChange}
           className="dropdown"
-          style={{
-            width: "10rem",
-          }}
         >
           {sqlQueries.map((query, index) => (
             <option key={index} value={index}>
@@ -51,8 +48,8 @@ export default function CodeEditor({ handleExec }) {
       <CodeMirror
         style={{ textAlign: "start", fontSize: "1rem" }}
         value={editorText}
-        height="78vh"
-        width="40vw"
+        className="codeMirror"
+        height="100vh"
         theme="dark"
         extensions={[sql({ sql: true })]}
         onChange={onChange}

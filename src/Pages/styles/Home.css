@@ -1,11 +1,9 @@
 .bg_image{
-
-    height: 90vh;
-    width: 50vw;
     object-fit: contain;
     transition: all 200ms ease-in;
     /* opacity: 0.7; */
     cursor: grab;
+    height: 80vh;
     max-width: 50vw;
     max-height: 100vh;
 }
@@ -20,10 +18,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    /* margin: 1rem; */
 }
 
 .landing_text{
     text-align: center;
-    font-size: 7rem;
+    font-size: 8rem;
 }

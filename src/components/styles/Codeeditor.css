@@ -1,23 +1,39 @@
 .runbtn {
-    background-color: lightgreen;
+    color: rgba(93, 91, 91, 0.87);
+    /* padding: 0.5rem; */
+    background-color: aliceblue;
+    font-family: poppins;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
 }
 
 .toolbox {
-    /* width: auto; */
-    padding: 0.5rem 0rem;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
     display: flex;
     justify-content: space-between;
+    background-color: lightgreen;
 }
 
 .dropdown {
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(93, 91, 91, 0.87);
     padding: 0.5rem;
-    background-color: lightgreen;
+    background-color: aliceblue;
     font-family: poppins;
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 0.5rem;
+    border: none;
 }
 
 .wrapperEditor {
     margin: 1rem
+}
+
+
+.codeMirror {
+    /* height: 100vh; */
+
+    width: auto;
+    min-width: 40vw;
 }

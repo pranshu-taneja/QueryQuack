@@ -54,13 +54,6 @@ const useTableTheme = () => {
               },
             },
           },
-          MuiPaper: {
-            styleOverrides: {
-              root: {
-                width: "50vw",
-              },
-            },
-          },
         },
       }),
     [globalTheme]

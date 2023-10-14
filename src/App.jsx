@@ -3,6 +3,7 @@ import Home from "./Pages/Home.jsx";
 import Editor from "./Pages/Editor.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css"
 
 function App() {
   return (
