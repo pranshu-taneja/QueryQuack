@@ -1,17 +1,11 @@
 .bg_image{
     object-fit: contain;
     transition: all 200ms ease-in;
-    /* opacity: 0.7; */
     cursor: grab;
     height: 80vh;
     max-width: 50vw;
     max-height: 100vh;
 }
-/* 
-.bg_image:hover{
-    opacity: 1;
-} */
-
 
 .HomeWrapper{
     display: flex;
