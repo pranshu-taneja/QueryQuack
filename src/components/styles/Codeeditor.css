@@ -27,13 +27,11 @@
 }
 
 .wrapperEditor {
-    margin: 1rem
+    margin: 1rem;
+    min-width: 40vw;
 }
 
 
 .codeMirror {
-    /* height: 100vh; */
-
     width: auto;
-    min-width: 40vw;
 }

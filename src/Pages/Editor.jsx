@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, Suspense } from "react";
 import MaterialRender from "../components/MaterialRender";
 import { v4 as uuidv4 } from "uuid";
 import "./styles/Editor.css";
@@ -26,7 +26,7 @@ function Editor() {
         {curCsvURL.map((urlVal) => {
           return (
             <div key={uuidv4()} className="singleTableContainer">
-              <MaterialRender tableURL={urlVal}></MaterialRender>
+                <MaterialRender tableURL={urlVal}></MaterialRender>
             </div>
           );
         })}

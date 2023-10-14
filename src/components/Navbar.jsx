@@ -49,12 +49,6 @@ function Navbar() {
             <p className="logoText">QueryQuack</p>
           </div>
           {!isMobileView ? null : <div className="Hamburger">&#9776;</div>}
-          {/* <div
-            style={{ display: isMobileView ? "flex" : "none" }}
-            className="Hamburger"
-          >
-            &#9776;
-          </div> */}
         </section>
 
         <section

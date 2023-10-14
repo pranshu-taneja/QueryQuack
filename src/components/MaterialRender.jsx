@@ -1,8 +1,10 @@
-import React, { useMemo, useEffect, useState } from "react";
-import { MaterialReactTable } from "material-react-table";
+import React, { useMemo, useEffect, useState, Suspense } from "react";
+const MaterialReactTable = React.lazy(() => import("material-react-table"));
+
+import FallbackLoader from "./FallbackLoader";
 import csvtojson from "csvtojson";
 import useTableTheme from "./styles/useTableTheme";
-import "./styles/MaterialRender.css"
+import "./styles/MaterialRender.css";
 import { ThemeProvider } from "@mui/material";
 
 export default function MaterialRender({ tableURL }) {
@@ -46,20 +48,22 @@ export default function MaterialRender({ tableURL }) {
 
   return (
     <ThemeProvider theme={tableTheme}>
-      <MaterialReactTable
-        columns={columns}
-        data={csvData ?? []}
-        state={{ isLoading }}
-        enablePagination={false}
-        enableRowVirtualization={true}
-        enableRowNumbers
-        enableFilters={true}
-        initialState={{ density: "compact" }}
-        enableStickyHeader={true}
-        enableStickyFooter
-        enableBottomToolbar={false}
-        muiTableContainerProps={{ sx: { maxHeight: "300px" } }}
-      />
+      <Suspense fallback={<FallbackLoader height={"300px"} />}>
+        <MaterialReactTable
+          columns={columns}
+          data={csvData ?? []}
+          state={{ isLoading }}
+          enablePagination={false}
+          enableRowVirtualization={true}
+          enableRowNumbers
+          enableFilters={true}
+          initialState={{ density: "compact" }}
+          enableStickyHeader={true}
+          enableStickyFooter
+          enableBottomToolbar={false}
+          muiTableContainerProps={{ sx: { maxHeight: "300px" } }}
+        />
+      </Suspense>
     </ThemeProvider>
   );
 }

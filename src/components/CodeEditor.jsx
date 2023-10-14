@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
-import CodeMirror from "@uiw/react-codemirror";
-import { sql } from "@codemirror/lang-sql";
+import React, { useEffect, useState, Suspense } from "react";
 import "./styles/Codeeditor.css";
 import sqlQueries from "../helpers/sqlQueries";
+import FallbackLoader from "./FallbackLoader";
+
+const CodeMirror = React.lazy(() => import("@uiw/react-codemirror"));
+import { sql } from "@codemirror/lang-sql";
 
 export default function CodeEditor({ handleExec }) {
   const [selectedOption, setSelectedOption] = useState(0);
@@ -45,15 +47,17 @@ export default function CodeEditor({ handleExec }) {
           Run
         </button>
       </div>
-      <CodeMirror
-        style={{ textAlign: "start", fontSize: "1rem" }}
-        value={editorText}
-        className="codeMirror"
-        height="100vh"
-        theme="dark"
-        extensions={[sql({ sql: true })]}
-        onChange={onChange}
-      />
+      <Suspense fallback={<FallbackLoader height={"80vh"}/>}>
+        <CodeMirror
+          style={{ textAlign: "start", fontSize: "1rem" }}
+          value={editorText}
+          className="codeMirror"
+          height="80vh"
+          theme="dark"
+          extensions={[sql({ sql: true })]}
+          onChange={onChange}
+        />
+      </Suspense>
     </div>
   );
 }
