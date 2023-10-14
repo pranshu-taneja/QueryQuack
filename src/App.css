@@ -31,6 +31,10 @@
         max-width: 100vw;
         max-height: 50vh;
     }
+
+    .codeMirror {
+        max-width: 100vw;
+    }
 }
 
 
@@ -55,14 +59,15 @@
         align-items: center;
         /* padding-right: 2rem; */
     }
-    
+
     .secondary-section>* {
         justify-content: center;
         text-align: center;
         padding: 0.5rem;
         width: 100vw;
     }
-    .userName{
+
+    .userName {
         font-size: large;
     }
 }

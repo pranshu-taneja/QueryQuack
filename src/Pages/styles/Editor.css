@@ -24,3 +24,7 @@
   max-height: 90vh;
   overflow: scroll;
 }
+
+.codeMirror{
+  max-width: 40vw;
+}
