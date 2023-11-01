@@ -11,7 +11,7 @@ function Navbar() {
 
   useEffect(() => {
     function findMobileView() {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth <= 768) {
         setisMobileView(true);
         setIsDropDownOpen(false);
       } else {

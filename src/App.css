@@ -39,7 +39,7 @@
 
 
 /* Navbar Responsiveness */
-@media (width <=480px) {
+@media (width <=768px) {
     .navComponent-container {
         padding: 0rem;
         font-size: large;
